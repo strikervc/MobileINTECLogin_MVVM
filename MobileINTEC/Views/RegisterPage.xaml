@@ -10,8 +10,8 @@
         <Entry x:Name="Email" Placeholder="Email" Text="{Binding Email}" Grid.Row="2" ClearButtonVisibility="WhileEditing" PlaceholderColor="Gray" TextColor="Gray" />
         <Entry x:Name="Password" Placeholder="Password" Text="{Binding Password}" IsPassword="true" Grid.Row="3" ClearButtonVisibility="WhileEditing" PlaceholderColor="Gray" TextColor="Gray" />
         <Entry x:Name="Confirm" Placeholder="Confirm Password" Text="{Binding Confirmation}" IsPassword="true" Grid.Row="4" ClearButtonVisibility="WhileEditing" PlaceholderColor="Gray" TextColor="Gray" />
-        <Button x:Name="Register" Text="Register" Grid.Row="5" TextColor="White" WidthRequest="100" BackgroundColor="Red" Command="{Binding RegisterCommand}" />
-      </ScrollView>
-    </Grid>
+        <Button x:Name="Register" Text="Register" Grid.Row="5" TextColor="White" WidthRequest="100" BackgroundColor="Red" Command="{Binding RegisterCommand}" />  
+      </Grid>
+    </ScrollView>
    
 </ContentPage>
