@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MobileINTEC.Views.RegisterPage"
              Title="Register">
-    
+    <ScrollView>
      <Grid RowDefinitions ="Auto, Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="Auto" Padding="30" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
         <Image Source="logo.png" Grid.Row="0" Margin="60, 0, 60, 10"/>
         <Entry x:Name="Name" Placeholder="Name" Text="{Binding User}" Grid.Row="1" ClearButtonVisibility="WhileEditing" PlaceholderColor="Gray" TextColor="Gray" />
@@ -11,6 +11,7 @@
         <Entry x:Name="Password" Placeholder="Password" Text="{Binding Password}" IsPassword="true" Grid.Row="3" ClearButtonVisibility="WhileEditing" PlaceholderColor="Gray" TextColor="Gray" />
         <Entry x:Name="Confirm" Placeholder="Confirm Password" Text="{Binding Confirmation}" IsPassword="true" Grid.Row="4" ClearButtonVisibility="WhileEditing" PlaceholderColor="Gray" TextColor="Gray" />
         <Button x:Name="Register" Text="Register" Grid.Row="5" TextColor="White" WidthRequest="100" BackgroundColor="Red" Command="{Binding RegisterCommand}" />
+      </ScrollView>
     </Grid>
    
 </ContentPage>
