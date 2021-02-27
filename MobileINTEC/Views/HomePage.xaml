@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileINTEC.Views.HomePage"
+             Title="Discovery"
+             NavigationPage.HasNavigationBar="False"
+            BarBackgroundColor="Red">
+
+
+    <ContentPage Title="Home" BackgroundColor="LightGray"/>
+    <ContentPage Title="Discover" BackgroundColor="LightGray">
+        <ScrollView>
+            <Grid RowSpacing="20" ColumnSpacing="20" RowDefinitions="*, *, *" ColumnDefinitions="*, *" Padding="20" HorizontalOptions="CenterAndExpand">
+                <Button x:Name="BarsAndHotels" Text="{Binding BarAndHotelsMenuOption.Title}" ImageSource="{Binding BarAndHotelsMenuOption.Image}" Grid.Row="0" Grid.Column="0" BackgroundColor="White" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                <Button x:Name="FineAndDinning" Text="{Binding FineAndDinningMenuOption.Title}" ImageSource="{Binding FineAndDinningMenuOption.Image}" Grid.Row="0" Grid.Column="1" BackgroundColor="White" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                <Button x:Name="Cafes" Text="{Binding CafesMenuOption.Title}" ImageSource="{Binding CafesMenuOption.Image}" Grid.Row="1" Grid.Column="0" BackgroundColor="White" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                <Button x:Name="Nearby" Text="{Binding NearbyMenuOption.Title}" ImageSource="{Binding NearbyMenuOption.Image}" Grid.Row="1" Grid.Column="1" BackgroundColor="White" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                <Button x:Name="FastFoods" Text="{Binding FastFoodsMenuOption.Title}" ImageSource="{Binding FastFoodsMenuOption.Image}" Grid.Row="2" Grid.Column="0" BackgroundColor="White" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+                <Button x:Name="FeaturedFoods" Text="{Binding FeaturedFoodsMenuOption.Title}" ImageSource="{Binding FeaturedFoodsMenuOption.Image}" Grid.Row="2" Grid.Column="1" BackgroundColor="White" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Marks" />
+    <ContentPage Title="Top" />
+    <ContentPage Title="Profile" />
+</TabbedPage>
+
